@@ -39,12 +39,12 @@ function addNumbers(num1, num2) {
  *   email: "leia@leia.com",
  * }
 */
-function makePersonObject(idNum, name, emailAdd) {
+function makePersonObject(id, name, email) {
 
   const infObj = {
-    idNum: idNum,
+    id: id,
     name: name,
-    emailAdd: emailAdd
+    email: email
   }
   return infObj;
       /* code here */
@@ -91,6 +91,7 @@ function makeSmartPerson(name) {
       return `Hello, my name is ${functObj.name}`;
     }
   }
+  return functObj;
   /* code here */
 }
 
@@ -153,6 +154,8 @@ function get3rdCar(inventory) {
  * it will return `This is a Lincoln Navigator`.
 */
 function getCarInfoByIndex(inventory, index) {
+  const findCar = inventory[index];
+  return `This is a ${findCar.car_make} ${findCar.car_model}`;
   /* code here */
 }
 
